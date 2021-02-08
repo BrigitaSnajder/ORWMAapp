@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layout"
+    android:layout_marginBottom="20dp">
+    <RelativeLayout
+        android:id="@+id/leftmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivicon"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            />
+        <TextView
+            android:id="@+id/tvWeatherType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Clouds"
+            android:layout_below="@+id/ivicon"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rightmain"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/leftmain"
+        android:layout_marginStart="30dp">
+        <TextView
+            android:id="@+id/tvdayntime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Wednesday 17:00"
+            android:layout_alignParentTop="true"
+            />
+        <TextView
+            android:id="@+id/tvtemp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Temperature: 13°C"
+            android:layout_below="@+id/tvdayntime"
+            />
+        <TextView
+            android:id="@+id/tvrealfeel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Reel-Feel: 10°C"
+            android:layout_below="@id/tvtemp"
+            />
+        <TextView
+            android:id="@+id/tvHumidity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="Humidity: 30"
+            android:layout_below="@+id/tvrealfeel"
+            />
+    </RelativeLayout>
+</RelativeLayout>

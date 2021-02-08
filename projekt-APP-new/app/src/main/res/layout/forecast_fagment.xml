@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:id="@+id/fragment">
+    <TextView
+        android:gravity="center_horizontal"
+        android:id="@+id/tvTown"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/fourthy_sp"
+        android:layout_below="@+id/header"
+        android:layout_marginBottom="@dimen/ten_dp"
+        />
+    <TextView
+        android:id="@+id/tvFiveDaysForecast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTown"
+        android:text="@string/_5_days_3_hour_forecast"
+        android:textSize="@dimen/twenty_sp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewFrag"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tvFiveDaysForecast"
+        android:layout_above="@+id/footer"
+        />
+    <RelativeLayout
+        android:id="@+id/footer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+        <Button
+            android:id="@+id/btnback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/back"
+            android:layout_marginRight="@dimen/ten_dp"/>
+
+        <TextView
+            android:id="@+id/tvHourForecast"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Today / 1 hour forecast"
+            android:textSize="@dimen/twenty_sp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/btnback"
+            />
+    </RelativeLayout>
+</RelativeLayout>
